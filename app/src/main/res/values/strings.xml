@@ -4,4 +4,6 @@
     <string name="next">Lanjutkan</string>
     <string name="now_playing">Now Playing</string>
     <string name="now_playing_desc">Lebih mudah untuk mengetahui\n film sedang tampil</string>
+    <string name="pre_sale">Pre Sale</string>
+    <string name="pre_sale_desc">Tidak khawatir ketinggalan\n update film terbaru</string>
 </resources>
