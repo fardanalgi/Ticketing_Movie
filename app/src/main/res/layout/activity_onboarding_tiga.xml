@@ -15,7 +15,7 @@
         android:layout_marginEnd="16dp"
         android:layout_marginBottom="24dp"
         android:background="@drawable/button_pink"
-        android:text="@string/next"
+        android:text="@string/memulai"
         android:textColor="@color/putih"
         android:textSize="18sp"
         android:textStyle="bold"
@@ -35,14 +35,14 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/onboarding_dua" />
+        app:srcCompat="@drawable/onboarding_tiga_new" />
 
     <TextView
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="54dp"
-        android:text="@string/pre_sale"
+        android:text="@string/cashless"
         android:textColor="@color/putih"
         android:textSize="25sp"
         android:textStyle="bold"
@@ -56,7 +56,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="7dp"
         android:gravity="center"
-        android:text="@string/pre_sale_desc"
+        android:text="@string/cashless_desc"
         android:textColor="#857F7F"
         android:textSize="15sp"
         app:layout_constraintEnd_toEndOf="parent"

@@ -6,4 +6,7 @@
     <string name="now_playing_desc">Lebih mudah untuk mengetahui\n film sedang tampil</string>
     <string name="pre_sale">Pre Sale</string>
     <string name="pre_sale_desc">Tidak khawatir ketinggalan\n update film terbaru</string>
+    <string name="cashless">Cashless</string>
+    <string name="cashless_desc">Gunakan E-Wallet untuk\n transaksi tiket nonton</string>
+    <string name="memulai">Memulai</string>
 </resources>
