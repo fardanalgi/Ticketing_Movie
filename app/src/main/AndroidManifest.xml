@@ -14,6 +14,7 @@
         <activity android:name=".SignInActivity" />
         <activity android:name=".SignUpActivity" />
         <activity android:name=".SignUpPhotoscreenActivity" />
+        <activity android:name=".PilihBangkuActivity" />
         <activity android:name=".onboarding.OnboardingTigaActivity" />
         <activity android:name=".onboarding.OnboardingduaActivity" />
         <activity android:name=".onboarding.OnboardingSatuActivity" />
