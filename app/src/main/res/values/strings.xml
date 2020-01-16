@@ -30,6 +30,14 @@
     <string name="storyboard">Storyboard</string>
     <string name="movie_desc">The Avengers must stop Thanos, an intergalactic\n warlord, from getting his hands on all the infinity\n stones. However, Thanos is prepared to go to any\n lengths to carry out his insane plan.</string>
     <string name="who_played">Who Played</string>
-    <string name="pilih_bangku">pilih bangku</string>
+    <string name="pilih_bangku">Pilih Bangku</string>
     <string name="rate">9.7</string>
+    <string name="layar_bioskop">LAYAR BIOSKOP</string>
+    <string name="beli_tiket">Beli tiket</string>
+    <string name="avengers_infinity_war">Avengers: Infinity War</string>
+    <string name="a">A</string>
+    <string name="b">B</string>
+    <string name="c">C</string>
+    <string name="d">D</string>
+    <string name="e">E</string>
 </resources>
