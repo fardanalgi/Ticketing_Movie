@@ -228,7 +228,6 @@
         android:layout_marginTop="8dp"
         android:text="@string/avengers_infinity_war"
         android:textSize="20sp"
-        android:textStyle="bold"
         android:textColor="@color/putih"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -333,6 +332,16 @@
             android:src="@drawable/button_line_biru_muda" />
 
     </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imageView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/button7"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/desc" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
