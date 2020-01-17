@@ -11,10 +11,11 @@
         android:theme="@style/AppTheme">
         <activity android:name=".DetailActivity"></activity>
         <activity android:name=".HomeActivity" />
-        <activity android:name=".SignInActivity" />
-        <activity android:name=".SignUpActivity" />
-        <activity android:name=".SignUpPhotoscreenActivity" />
+        <activity android:name=".sign.SignInActivity" />
+        <activity android:name=".sign.SignUpActivity" />
+        <activity android:name=".sign.SignUpPhotoscreenActivity" />
         <activity android:name=".PilihBangkuActivity" />
+        <activity android:name=".CheckoutActivity" />
         <activity android:name=".onboarding.OnboardingTigaActivity" />
         <activity android:name=".onboarding.OnboardingduaActivity" />
         <activity android:name=".onboarding.OnboardingSatuActivity" />

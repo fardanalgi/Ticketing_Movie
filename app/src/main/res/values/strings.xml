@@ -40,4 +40,10 @@
     <string name="c">C</string>
     <string name="d">D</string>
     <string name="e">E</string>
+    <string name="checkout">Checkout</string>
+    <string name="bayar">Bayar Sekarang</string>
+    <string name="batalkan">Batalkan</string>
+    <string name="when">When</string>
+    <string name="date_amp_time"><![CDATA[Date & Time]]></string>
+    <string name="cinema">Cinema</string>
 </resources>
