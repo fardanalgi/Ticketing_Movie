@@ -46,4 +46,8 @@
     <string name="when">When</string>
     <string name="date_amp_time"><![CDATA[Date & Time]]></string>
     <string name="cinema">Cinema</string>
+    <string name="items">Items</string>
+    <string name="seat_no_c1">Seat No.C1</string>
+    <string name="seat">Seat No.C2</string>
+    <string name="total_harus_bayar">Total Harus Bayar</string>
 </resources>
