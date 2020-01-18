@@ -50,4 +50,7 @@
     <string name="seat_no_c1">Seat No.C1</string>
     <string name="seat">Seat No.C2</string>
     <string name="total_harus_bayar">Total Harus Bayar</string>
+    <string name="total">Total Balance</string>
+    <string name="save">Save</string>
+    <string name="edit">Edit Profile</string>
 </resources>
