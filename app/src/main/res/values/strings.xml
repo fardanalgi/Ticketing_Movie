@@ -53,4 +53,9 @@
     <string name="total">Total Balance</string>
     <string name="save">Save</string>
     <string name="edit">Edit Profile</string>
+    <string name="wallet">My Wallet</string>
+    <string name="saldo">Saldo Tersedia</string>
+    <string name="daftar_transaksi">Daftar Transaksi</string>
+    <string name="history">My History</string>
+    <string name="_200_movie">200 Movie</string>
 </resources>
