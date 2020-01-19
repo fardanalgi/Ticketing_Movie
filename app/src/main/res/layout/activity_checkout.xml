@@ -132,7 +132,6 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
-        android:drawableStart="drawable/date"
         android:text="@string/date_amp_time"
         android:textColor="@color/abuabu"
         android:textSize="17sp"
