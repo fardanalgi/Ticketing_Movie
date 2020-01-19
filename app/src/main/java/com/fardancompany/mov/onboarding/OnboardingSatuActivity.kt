@@ -15,7 +15,7 @@ class OnboardingSatuActivity : AppCompatActivity() {
 
         btn_home.setOnClickListener {
             val intent = Intent(this@OnboardingSatuActivity,
-                OnboardingduaActivity::class.java)
+                OnboardingDuaActivity::class.java)
             startActivity(intent)
         }
 
