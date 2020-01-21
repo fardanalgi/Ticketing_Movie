@@ -4,7 +4,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.fardancompany.mov.R
-import com.fardancompany.mov.sign.SignInActivity
+import com.fardancompany.mov.sign.signin.SignInActivity
 import kotlinx.android.synthetic.main.activity_onboarding_tiga.*
 
 class OnboardingTigaActivity : AppCompatActivity() {

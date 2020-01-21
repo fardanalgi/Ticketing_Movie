@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "825385006256",
+    "firebase_url": "https://movproject-2d29f.firebaseio.com",
+    "project_id": "movproject-2d29f",
+    "storage_bucket": "movproject-2d29f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:825385006256:android:0e09311679f4273e523775",
+        "android_client_info": {
+          "package_name": "com.fardancompany.mov"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "825385006256-c1vp3b611pbe2am6s2go13d7l44g3m8j.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.fardancompany.mov",
+            "certificate_hash": "79b5571d0f881d66411dee960a46e6e92b5ccdc3"
+          }
+        },
+        {
+          "client_id": "825385006256-tju5sdeslkk6um2k25vdl02qumc2je68.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAAuR-tDsk2rFHBZ-FdbCrmF54MIIcHHho"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "825385006256-tju5sdeslkk6um2k25vdl02qumc2je68.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

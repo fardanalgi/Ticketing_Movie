@@ -2,6 +2,17 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.fardancompany.mov">
 
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+
+    <uses-permission-sdk-23 android:name="android.permission.INTERNET"/>
+    <uses-permission-sdk-23 android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission-sdk-23 android:name="android.permission.CAMERA"/>
+
+    <uses-feature android:name="android.hardware.camera"
+        android:required="true"/>
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -11,7 +22,7 @@
         android:theme="@style/AppTheme.noActionBar">
         <activity android:name=".DetailActivity"></activity>
         <activity android:name=".HomeActivity" />
-        <activity android:name=".sign.SignInActivity" />
+        <activity android:name=".sign.signin.SignInActivity" />
         <activity android:name=".sign.SignUpActivity" />
         <activity android:name=".sign.SignUpPhotoscreenActivity" />
         <activity android:name=".PilihBangkuActivity" />
