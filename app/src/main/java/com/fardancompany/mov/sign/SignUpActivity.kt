@@ -1,11 +1,13 @@
 package com.fardancompany.mov.sign
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.Toast
 import com.fardancompany.mov.R
+import com.fardancompany.mov.sign.signin.User
 import com.fardancompany.mov.utils.Preferences
-import com.google.firebase.database.DatabaseReference
-import com.google.firebase.database.FirebaseDatabase
+import com.google.firebase.database.*
 import kotlinx.android.synthetic.main.activity_sign_up.*
 
 class SignUpActivity : AppCompatActivity() {
@@ -51,8 +53,49 @@ class SignUpActivity : AppCompatActivity() {
                 et_email.requestFocus()
             }else{
 
-//                save(sUsername, sPassword, sNama, sEmail)
+                saveUser(sUsername, sPassword, sNama, sEmail)
             }
         }
+    }
+
+    private fun saveUser(sUsername: String, sPassword: String, sNama: String, sEmail: String){
+
+        val user = User()
+        user.email = sEmail
+        user.username = sUsername
+        user.nama = sNama
+        user.password = sPassword
+
+        if (sUsername != null){
+            checkingUsername(sUsername, user)
+        }
+    }
+
+    private fun checkingUsername(iUsername: String, data: User){
+        mFirebaseDatabase.child(iUsername).addValueEventListener(object : ValueEventListener{
+            override fun onDataChange(dataSnapshot: DataSnapshot) {
+
+                val user = dataSnapshot.getValue(User::class.java)
+                if (user == null) {
+                    mFirebaseDatabase.child(iUsername).setValue(data)
+
+                    preferences.setValues("nama", data.nama.toString())
+                    preferences.setValues("user", data.username.toString())
+                    preferences.setValues("url", "")
+                    preferences.setValues("email", data.email.toString())
+                    preferences.setValues("status", "1")
+
+                    val intent = Intent (this@SignUpActivity,
+                        SignUpPhotoscreenActivity::class.java).putExtra("nama", data.nama)
+                    startActivity(intent)
+                }else {
+                    Toast.makeText(this@SignUpActivity, "User sudah digunakan", Toast.LENGTH_LONG).show()
+                }
+            }
+
+            override fun onCancelled(error: DatabaseError) {
+                Toast.makeText(this@SignUpActivity, ""+error.message,Toast.LENGTH_LONG).show()
+            }
+        })
     }
 }
