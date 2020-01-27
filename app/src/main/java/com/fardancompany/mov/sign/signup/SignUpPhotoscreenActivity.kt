@@ -1,4 +1,4 @@
-package com.fardancompany.mov.sign
+package com.fardancompany.mov.sign.signup
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle

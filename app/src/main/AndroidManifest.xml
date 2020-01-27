@@ -23,8 +23,8 @@
         <activity android:name=".DetailActivity"></activity>
         <activity android:name=".HomeActivity" />
         <activity android:name=".sign.signin.SignInActivity" />
-        <activity android:name=".sign.SignUpActivity" />
-        <activity android:name=".sign.SignUpPhotoscreenActivity" />
+        <activity android:name=".sign.signup.SignUpActivity" />
+        <activity android:name=".sign.signup.SignUpPhotoscreenActivity" />
         <activity android:name=".PilihBangkuActivity" />
         <activity android:name=".CheckoutActivity" />
         <activity android:name=".EditProfileActivity" />

@@ -5,10 +5,9 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 
 import com.fardancompany.mov.R
-import android.util.Log
 import android.widget.Toast
 import com.fardancompany.mov.HomeActivity
-import com.fardancompany.mov.sign.SignUpActivity
+import com.fardancompany.mov.sign.signup.SignUpActivity
 import com.fardancompany.mov.utils.Preferences
 import com.google.firebase.database.*
 import kotlinx.android.synthetic.main.activity_sign_in.*
