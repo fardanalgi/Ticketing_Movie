@@ -10,6 +10,7 @@ import android.net.Uri
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.provider.MediaStore
+import android.util.Log
 import android.view.View
 import android.widget.Toast
 import com.bumptech.glide.Glide
@@ -17,6 +18,7 @@ import com.bumptech.glide.request.RequestOptions
 import com.fardancompany.mov.HomeActivity
 import com.fardancompany.mov.R
 import com.fardancompany.mov.utils.Preferences
+import com.github.dhaval2404.imagepicker.ImagePicker
 import com.google.firebase.storage.FirebaseStorage
 import com.google.firebase.storage.StorageReference
 import com.karumi.dexter.Dexter
@@ -26,6 +28,7 @@ import com.karumi.dexter.listener.PermissionGrantedResponse
 import com.karumi.dexter.listener.PermissionRequest
 import com.karumi.dexter.listener.single.PermissionListener
 import kotlinx.android.synthetic.main.activity_sign_up_photoscreen.*
+import java.io.File
 import java.util.*
 
 
@@ -56,10 +59,14 @@ class SignUpPhotoscreenActivity : AppCompatActivity(), PermissionListener {
                 iv_add.setImageResource(R.drawable.ic_btn_upload)
                 iv_profile.setImageResource(R.drawable.pic)
             }else{
-                Dexter.withActivity(this)
-                    .withPermission(Manifest.permission.CAMERA)
-                    .withListener(this)
-                    .check()
+//                Dexter.withActivity(this)
+//                    .withPermission(Manifest.permission.CAMERA)
+//                    .withListener(this)
+//                    .check()
+
+                ImagePicker.with(this)
+                    .cameraOnly()
+                    .start()
             }
         }
 
@@ -134,20 +141,44 @@ class SignUpPhotoscreenActivity : AppCompatActivity(), PermissionListener {
         Toast.makeText(this,"Tergesah? klik tombol Upload nanti", Toast.LENGTH_LONG).show()
     }
 
-    @SuppressLint("MissingSuperCall")
-    override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
-        if (requestCode == REQUEST_IMAGE_CAPTURE && resultCode == Activity.RESULT_OK){
-            var bitmap = data?.extras?.get("data") as Bitmap
-            statusAdd = true
+//    @SuppressLint("MissingSuperCall")
+//    override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
+//        if (requestCode == REQUEST_IMAGE_CAPTURE && resultCode == Activity.RESULT_OK){
+//            var bitmap = data?.extras?.get("data") as Bitmap
+//            statusAdd = true
+//
+//            filePath = data.getData()!!
+//            Glide.with(this)
+//                .load(bitmap)
+//                .apply(RequestOptions.circleCropTransform())
+//                .into(iv_profile)
+//
+//            btn_home.visibility = View.VISIBLE
+//            iv_add.setImageResource(R.drawable.ic_btn_del_pic)
+//        }
+//    }
 
-            filePath = data.getData()!!
+    override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
+        super.onActivityResult(requestCode, resultCode, data)
+        if (resultCode == Activity.RESULT_OK) {
+            //Image Uri will not be null for RESULT_OK
+            statusAdd = true
+            filePath = data?.data!!
+
             Glide.with(this)
-                .load(bitmap)
+                .load(filePath)
                 .apply(RequestOptions.circleCropTransform())
                 .into(iv_profile)
 
+            Log.v("tamvan", "file uri upload"+filePath)
+
             btn_home.visibility = View.VISIBLE
             iv_add.setImageResource(R.drawable.ic_btn_del_pic)
+
+        } else if (resultCode == ImagePicker.RESULT_ERROR) {
+            Toast.makeText(this, ImagePicker.getError(data), Toast.LENGTH_SHORT).show()
+        } else {
+            Toast.makeText(this, "Task Cancelled", Toast.LENGTH_SHORT).show()
         }
     }
 }
