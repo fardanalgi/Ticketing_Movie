@@ -1,11 +1,8 @@
 package com.fardancompany.mov.sign.signup
 
-import android.Manifest
-import android.annotation.SuppressLint
 import android.app.Activity
 import android.app.ProgressDialog
 import android.content.Intent
-import android.graphics.Bitmap
 import android.net.Uri
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -15,20 +12,17 @@ import android.view.View
 import android.widget.Toast
 import com.bumptech.glide.Glide
 import com.bumptech.glide.request.RequestOptions
-import com.fardancompany.mov.HomeActivity
+import com.fardancompany.mov.home.HomeActivity
 import com.fardancompany.mov.R
 import com.fardancompany.mov.utils.Preferences
 import com.github.dhaval2404.imagepicker.ImagePicker
 import com.google.firebase.storage.FirebaseStorage
 import com.google.firebase.storage.StorageReference
-import com.karumi.dexter.Dexter
 import com.karumi.dexter.PermissionToken
 import com.karumi.dexter.listener.PermissionDeniedResponse
 import com.karumi.dexter.listener.PermissionGrantedResponse
-import com.karumi.dexter.listener.PermissionRequest
 import com.karumi.dexter.listener.single.PermissionListener
 import kotlinx.android.synthetic.main.activity_sign_up_photoscreen.*
-import java.io.File
 import java.util.*
 
 

@@ -3,7 +3,6 @@ package com.fardancompany.mov.onboarding
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import com.fardancompany.mov.HomeActivity
 import com.fardancompany.mov.R
 import com.fardancompany.mov.sign.signin.SignInActivity
 import com.fardancompany.mov.utils.Preferences

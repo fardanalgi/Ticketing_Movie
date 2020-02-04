@@ -24,7 +24,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme.noActionBar">
         <activity android:name=".DetailActivity"></activity>
-        <activity android:name=".HomeActivity" />
+        <activity android:name=".home.HomeActivity" />
         <activity android:name=".sign.signin.SignInActivity" />
         <activity android:name=".sign.signup.SignUpActivity" />
         <activity android:name=".sign.signup.SignUpPhotoscreenActivity" />
@@ -43,6 +43,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
     </application>
 
 </manifest>

@@ -6,7 +6,7 @@ import android.os.Bundle
 
 import com.fardancompany.mov.R
 import android.widget.Toast
-import com.fardancompany.mov.HomeActivity
+import com.fardancompany.mov.home.HomeActivity
 import com.fardancompany.mov.sign.signup.SignUpActivity
 import com.fardancompany.mov.utils.Preferences
 import com.google.firebase.database.*
@@ -29,7 +29,7 @@ class SignInActivity : AppCompatActivity() {
         mDatabase = FirebaseDatabase.getInstance().getReference("User")
         preference = Preferences(this)
 
-//        preference.setValues("onboarding", "1")
+        preference.setValues("onboarding", "1")
         if (preference.getValues("status").equals("1")){
             finishAffinity()
 
@@ -81,7 +81,8 @@ class SignInActivity : AppCompatActivity() {
 //
                         finishAffinity()
 
-                        val intent = Intent(this@SignInActivity,HomeActivity::class.java)
+                        val intent = Intent(this@SignInActivity,
+                            HomeActivity::class.java)
                         startActivity(intent)
                         
                     }else{
