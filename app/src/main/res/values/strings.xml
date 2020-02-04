@@ -58,4 +58,7 @@
     <string name="daftar_transaksi">Daftar Transaksi</string>
     <string name="history">My History</string>
     <string name="_200_movie">200 Movie</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
