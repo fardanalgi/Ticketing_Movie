@@ -45,7 +45,7 @@ class DashboardFragment : Fragment() {
         super.onActivityCreated(savedInstanceState)
 
         preferences = Preferences(activity!!.applicationContext)
-        mDatabase = FirebaseDatabase.getInstance().getReference("film")
+        mDatabase = FirebaseDatabase.getInstance().getReference("Film")
 
         tv_nama.setText(preferences.getValues("nama"))
         if (!preferences.getValues("saldo").equals("")){
@@ -95,7 +95,7 @@ class DashboardFragment : Fragment() {
     private fun currecy(harga: Double, textView: TextView){
         val localeId = Locale("in", "ID")
         val formatRupiah = NumberFormat.getCurrencyInstance(localeId)
-        textView.setText(formatRupiah.format(harga as Double))
+        textView.setText(formatRupiah.format(harga))
     }
 
 

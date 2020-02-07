@@ -110,7 +110,6 @@ class SignUpPhotoscreenActivity : AppCompatActivity(), PermissionListener {
     }
 
     override fun onPermissionGranted(response: PermissionGrantedResponse?) {
-        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
 
         Intent(MediaStore.ACTION_IMAGE_CAPTURE).also { takePictureIntent ->
             takePictureIntent.resolveActivity(packageManager)?.also {
@@ -123,11 +122,9 @@ class SignUpPhotoscreenActivity : AppCompatActivity(), PermissionListener {
         permission: com.karumi.dexter.listener.PermissionRequest?,
         token: PermissionToken?
     ) {
-        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
     }
 
     override fun onPermissionDenied(response: PermissionDeniedResponse?) {
-        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
         Toast.makeText(this, "Anda tidak bisa menambahkan photo profile", Toast.LENGTH_LONG).show()
     }
 

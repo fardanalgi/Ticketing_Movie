@@ -8,8 +8,7 @@
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:background="@drawable/shape_backgound_blue">
+        android:layout_height="match_parent">
 
         <TextView
             android:id="@+id/tv_nama"
