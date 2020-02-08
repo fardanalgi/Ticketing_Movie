@@ -22,7 +22,7 @@ class DetailActivity : AppCompatActivity() {
         setContentView(R.layout.activity_detail)
 
         val data = intent.getParcelableExtra<Film>("data")
-        mDatabase = FirebaseDatabase.getInstance().getReference("File")
+        mDatabase = FirebaseDatabase.getInstance().getReference("Film")
             .child(data.judul.toString())
             .child("play")
 
