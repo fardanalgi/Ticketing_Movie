@@ -7,6 +7,7 @@
     android:background="@color/biru">
 
     <TextView
+        android:id="@+id/tv_kursi"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
@@ -23,6 +24,7 @@
         tools:text="Seat No. C1"/>
 
     <TextView
+        android:id="@+id/tv_harga"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"

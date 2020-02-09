@@ -29,7 +29,7 @@
         <activity android:name=".sign.signup.SignUpActivity" />
         <activity android:name=".sign.signup.SignUpPhotoscreenActivity" />
         <activity android:name=".PilihBangkuActivity" />
-        <activity android:name=".CheckoutActivity" />
+        <activity android:name=".checkout.CheckoutActivity" />
         <activity android:name=".EditProfileActivity" />
         <activity android:name=".MyWalletActivity" />
         <activity android:name=".HistoryActivity" />
