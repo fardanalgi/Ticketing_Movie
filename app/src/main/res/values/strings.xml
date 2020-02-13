@@ -58,9 +58,14 @@
     <string name="daftar_transaksi">Daftar Transaksi</string>
     <string name="history">My History</string>
     <string name="_200_movie">200 Movie</string>
+    <string name="_7">7</string>
+    <string name="idr_70_000">IDR 70.000</string>
+    <string name="tiket_telah_berhasil_dibeli_ndan_selamat_menikmati_film">Tiket telah berhasil dibeli dan\n selamat menikmati film</string>
+    <string name="happy_watching">Happy Watching !!</string>
+    <string name="lihat_tiket">lihat tiket</string>
+    <string name="home">Home</string>
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
-    <string name="_7">7</string>
-    <string name="idr_70_000">IDR 70.000</string>
+
 </resources>
