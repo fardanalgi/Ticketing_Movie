@@ -59,7 +59,7 @@ class SignUpPhotoscreenActivity : AppCompatActivity(), PermissionListener {
 //                    .check()
 
                 ImagePicker.with(this)
-                    .galleryOnly()
+                    .cameraOnly()
                     .start()
             }
         }

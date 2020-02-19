@@ -1,4 +1,4 @@
-package com.fardancompany.mov.checkout
+package com.fardancompany.mov.checkout.adapter
 
 import android.content.Context
 import android.view.LayoutInflater
@@ -56,8 +56,6 @@ class CheckoutAdapter (private var data: List<Checkout>,
                 listener(data)
             }
         }
-
-
 
     }
 }

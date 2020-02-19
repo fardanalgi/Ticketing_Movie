@@ -4,15 +4,14 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.fardancompany.mov.CheckoutSuccessActivity
 import com.fardancompany.mov.R
+import com.fardancompany.mov.checkout.adapter.CheckoutAdapter
 import com.fardancompany.mov.checkout.model.Checkout
 import com.fardancompany.mov.utils.Preferences
 import kotlinx.android.synthetic.main.activity_checkout.*
 import java.text.NumberFormat
 import java.util.*
 import kotlin.collections.ArrayList
-
 
 class CheckoutActivity : AppCompatActivity() {
 
@@ -41,7 +40,7 @@ class CheckoutActivity : AppCompatActivity() {
         }
 
         rv_checkout.layoutManager = LinearLayoutManager(this)
-        rv_checkout.adapter = CheckoutAdapter(dataList){
+        rv_checkout.adapter = CheckoutAdapter(dataList) {
 
         }
 

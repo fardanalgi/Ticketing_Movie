@@ -22,6 +22,7 @@ class DetailActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_detail)
 
+        //menerima data parcelable dari dashboard fragmnet mengunakan key "data"
         val data = intent.getParcelableExtra<Film>("data")
         mDatabase = FirebaseDatabase.getInstance().getReference("Film")
             .child(data.judul.toString())

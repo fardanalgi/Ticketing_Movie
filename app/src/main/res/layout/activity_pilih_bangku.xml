@@ -23,13 +23,13 @@
             android:layout_marginStart="25dp"
             android:layout_marginEnd="15dp"
             android:layout_weight="1"
-            android:src="@drawable/button_line_biru_muda" />
+            android:src="@drawable/ic_rectangle_booked" />
 
         <ImageView
             android:layout_width="5dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:src="@drawable/button_line_biru_muda" />
+            android:src="@drawable/ic_rectangle_booked"/>
 
         <TextView
             android:layout_width="0dp"
@@ -45,7 +45,7 @@
             android:layout_width="5dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:src="@drawable/button_line_biru_muda" />
+            android:src="@drawable/ic_rectangle_booked" />
 
         <ImageView
             android:layout_width="5dp"
@@ -53,7 +53,7 @@
             android:layout_marginStart="15dp"
             android:layout_marginEnd="25dp"
             android:layout_weight="1"
-            android:src="@drawable/button_line_biru_muda" />
+            android:src="@drawable/ic_rectangle_booked" />
 
     </LinearLayout>
 
@@ -73,13 +73,13 @@
             android:layout_marginStart="25dp"
             android:layout_marginEnd="15dp"
             android:layout_weight="1"
-            android:src="@drawable/button_line_biru_muda" />
+            android:src="@drawable/ic_rectangle_booked" />
 
         <ImageView
             android:layout_width="5dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:src="@drawable/button_line_biru_muda" />
+            android:src="@drawable/ic_rectangle_booked" />
 
         <TextView
             android:layout_width="0dp"
@@ -95,7 +95,7 @@
             android:layout_width="5dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:src="@drawable/button_line_biru_muda" />
+            android:src="@drawable/ic_rectangle_booked" />
 
         <ImageView
             android:layout_width="5dp"
@@ -103,7 +103,7 @@
             android:layout_marginStart="15dp"
             android:layout_marginEnd="25dp"
             android:layout_weight="1"
-            android:src="@drawable/button_line_biru_muda" />
+            android:src="@drawable/ic_rectangle_booked" />
 
     </LinearLayout>
 
@@ -123,13 +123,13 @@
             android:layout_marginStart="25dp"
             android:layout_marginEnd="15dp"
             android:layout_weight="1"
-            android:src="@drawable/button_line_biru_muda" />
+            android:src="@drawable/ic_rectangle_booked" />
 
         <ImageView
             android:layout_width="5dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:src="@drawable/button_line_biru_muda" />
+            android:src="@drawable/ic_rectangle_booked" />
 
         <TextView
             android:layout_width="0dp"
@@ -142,12 +142,14 @@
             android:textStyle="bold" />
 
         <ImageView
+            android:id="@+id/c3"
             android:layout_width="5dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:src="@drawable/button_line_biru_muda" />
 
         <ImageView
+            android:id="@+id/c4"
             android:layout_width="5dp"
             android:layout_height="match_parent"
             android:layout_marginStart="15dp"
@@ -187,11 +189,9 @@
         android:id="@+id/imageView9"
         android:layout_width="wrap_content"
         android:layout_height="100dp"
-        android:layout_marginTop="12dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView18"
+        app:layout_constraintTop_toBottomOf="@+id/tv_judul"
         app:srcCompat="@drawable/line" />
 
     <TextView
@@ -206,7 +206,7 @@
         app:layout_constraintStart_toStartOf="@+id/imageView9" />
 
     <Button
-        android:id="@+id/button7"
+        android:id="@+id/btn_beli_tiket"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
@@ -214,6 +214,7 @@
         android:layout_marginBottom="24dp"
         android:background="@drawable/button_pink"
         android:text="@string/beli_tiket"
+        android:visibility="invisible"
         android:textColor="@color/putih"
         android:textSize="20sp"
         android:textStyle="bold"
@@ -222,7 +223,7 @@
         app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
-        android:id="@+id/textView18"
+        android:id="@+id/tv_judul"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
@@ -249,13 +250,13 @@
             android:layout_marginStart="25dp"
             android:layout_marginEnd="15dp"
             android:layout_weight="1"
-            android:src="@drawable/button_line_biru_muda" />
+            android:src="@drawable/ic_rectangle_booked" />
 
         <ImageView
             android:layout_width="5dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:src="@drawable/button_line_biru_muda" />
+            android:src="@drawable/ic_rectangle_booked" />
 
         <TextView
             android:layout_width="0dp"
@@ -271,7 +272,7 @@
             android:layout_width="5dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:src="@drawable/button_line_biru_muda" />
+            android:src="@drawable/ic_rectangle_booked" />
 
         <ImageView
             android:layout_width="5dp"
@@ -279,7 +280,7 @@
             android:layout_marginStart="15dp"
             android:layout_marginEnd="25dp"
             android:layout_weight="1"
-            android:src="@drawable/button_line_biru_muda" />
+            android:src="@drawable/ic_rectangle_booked" />
 
     </LinearLayout>
 
@@ -299,13 +300,13 @@
             android:layout_marginStart="25dp"
             android:layout_marginEnd="15dp"
             android:layout_weight="1"
-            android:src="@drawable/button_line_biru_muda" />
+            android:src="@drawable/ic_rectangle_booked" />
 
         <ImageView
             android:layout_width="5dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:src="@drawable/button_line_biru_muda" />
+            android:src="@drawable/ic_rectangle_booked" />
 
         <TextView
             android:layout_width="0dp"
@@ -321,7 +322,7 @@
             android:layout_width="5dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:src="@drawable/button_line_biru_muda" />
+            android:src="@drawable/ic_rectangle_booked" />
 
         <ImageView
             android:layout_width="5dp"
@@ -329,7 +330,7 @@
             android:layout_marginStart="15dp"
             android:layout_marginEnd="25dp"
             android:layout_weight="1"
-            android:src="@drawable/button_line_biru_muda" />
+            android:src="@drawable/ic_rectangle_booked" />
 
     </LinearLayout>
 
@@ -339,7 +340,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginBottom="20dp"
-        app:layout_constraintBottom_toTopOf="@+id/button7"
+        app:layout_constraintBottom_toTopOf="@+id/btn_beli_tiket"
         app:layout_constraintStart_toStartOf="parent"
         app:srcCompat="@drawable/desc" />
 

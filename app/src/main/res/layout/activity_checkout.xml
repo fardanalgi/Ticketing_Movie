@@ -172,7 +172,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="@+id/textView20"
         app:layout_constraintVertical_bias="0.0"
-        tools:text="17 AUG, 10 AM" />
+        android:text="@string/_17_aug_10_am" />
 
     <TextView
         android:id="@+id/textView23"
@@ -185,7 +185,7 @@
         app:layout_constraintBottom_toBottomOf="@+id/textView21"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="@+id/textView21"
-        tools:text="Bekasi Cyber Park, Chinema 3" />
+        android:text="@string/bekasi_cyber_park_chinema_3" />
 
     <ImageView
         android:id="@+id/imageView15"

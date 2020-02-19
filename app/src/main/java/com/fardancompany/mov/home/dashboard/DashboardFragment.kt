@@ -47,7 +47,7 @@ class DashboardFragment : Fragment() {
         preferences = Preferences(activity!!.applicationContext)
         mDatabase = FirebaseDatabase.getInstance().getReference("Film")
 
-        tv_nama.setText(preferences.getValues("nama"))
+        tv_nama.text = preferences.getValues("nama")
         if (!preferences.getValues("saldo").equals("")){
             currecy(preferences.getValues("saldo")!!.toDouble(), tv_saldo)
         }
@@ -74,6 +74,7 @@ class DashboardFragment : Fragment() {
                 }
 
                 rv_now_playing.adapter = NowPlayingAdapter(datalist) {
+                    //mengirim data megunakan key "data" ke detail activity
                     val intent = Intent(context,
                         DetailActivity::class.java).putExtra("data", it)
                     startActivity(intent)
@@ -95,7 +96,7 @@ class DashboardFragment : Fragment() {
     private fun currecy(harga: Double, textView: TextView){
         val localeId = Locale("in", "ID")
         val formatRupiah = NumberFormat.getCurrencyInstance(localeId)
-        textView.setText(formatRupiah.format(harga))
+        textView.text = formatRupiah.format(harga)
     }
 
 
