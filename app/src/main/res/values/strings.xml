@@ -70,5 +70,8 @@
     <string name="bekasi_cyber_park_chinema_3">Bekasi Cyber Park, Chinema 3  </string>
     <string name="_17_aug_10_am">17 AUG, 10 AM</string>
     <string name="quick_print">Quick Print</string>
+    <string name="my_wallet">My Wallet</string>
+    <string name="change_language">Change Language</string>
+    <string name="help">Help</string>
 
 </resources>

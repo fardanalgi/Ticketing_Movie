@@ -47,7 +47,7 @@ class DashboardFragment : Fragment() {
         preferences = Preferences(activity!!.applicationContext)
         mDatabase = FirebaseDatabase.getInstance().getReference("Film")
 
-        tv_nama.text = preferences.getValues("nama")
+        tv_nama.setText(preferences.getValues("nama"))
         if (!preferences.getValues("saldo").equals("")){
             currecy(preferences.getValues("saldo")!!.toDouble(), tv_saldo)
         }
