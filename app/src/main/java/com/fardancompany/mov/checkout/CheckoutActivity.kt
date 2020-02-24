@@ -37,16 +37,21 @@ class CheckoutActivity : AppCompatActivity() {
             val intent = Intent(this@CheckoutActivity,
                 CheckoutSuccessActivity::class.java)
             startActivity(intent)
+
         }
 
         rv_checkout.layoutManager = LinearLayoutManager(this)
         rv_checkout.adapter = CheckoutAdapter(dataList) {
-
         }
 
-        val localId = Locale("in", "ID")
-        val formatRupiah = NumberFormat.getCurrencyInstance(localId)
-        tv_saldo.setText(formatRupiah.format(preferences.getValues("saldo")!!.toDouble()))
+        if (preferences.getValues("saldo")!!.isNotEmpty()) {
+            val localId = Locale("in", "ID")
+            val formatRupiah = NumberFormat.getCurrencyInstance(localId)
+            tv_saldo.setText(formatRupiah.format(preferences.getValues("saldo")!!.toDouble()))
 
+
+        }else{
+
+        }
     }
 }

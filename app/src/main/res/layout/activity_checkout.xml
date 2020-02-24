@@ -222,5 +222,15 @@
         app:layout_constraintTop_toTopOf="@+id/textView32"
         tools:text="IDR 280.000" />
 
+    <TextView
+        android:id="@+id/tvTotal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/total_balance"
+        android:textColor="@color/abuabu"
+        app:layout_constraintStart_toStartOf="@+id/textView32"
+        app:layout_constraintTop_toBottomOf="@+id/textView32" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

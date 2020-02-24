@@ -73,5 +73,6 @@
     <string name="my_wallet">My Wallet</string>
     <string name="change_language">Change Language</string>
     <string name="help">Help</string>
+    <string name="total_balance">Total Balance</string>
 
 </resources>
