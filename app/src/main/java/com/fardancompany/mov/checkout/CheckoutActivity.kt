@@ -37,7 +37,10 @@ class CheckoutActivity : AppCompatActivity() {
         setContentView(R.layout.activity_checkout)
 
         preferences = Preferences(this)
+
+        //menerima file data bangku dari aktifity pilih bangku
         dataList = intent.getSerializableExtra("data") as ArrayList<Checkout>
+        //menerima data judul film dari aktivity pilih bangku
         val data = intent.getParcelableExtra<Film>("datas")
 
         for (a in dataList.indices){
@@ -97,11 +100,13 @@ class CheckoutActivity : AppCompatActivity() {
 //        bundle.putString("id", "id_film")
 //        intent.putExtras(bundle)
 
-        val intent = Intent(this,TiketActivity::class.java)
+        val mIntent = Intent(this,TiketActivity::class.java)
         val bundle = Bundle()
+        //putParcelable berfungsi untuk mengirim data ke tiket avtivity mengunakan key "data"
         bundle.putParcelable("data",datas)
+        mIntent.putExtras(bundle)
 
-        val pendingIntent = PendingIntent.getActivity(this, 0, intent,
+        val pendingIntent = PendingIntent.getActivity(this, 0, mIntent,
             PendingIntent.FLAG_UPDATE_CURRENT)
 
         val builder = NotificationCompat.Builder(this, NOTIFICATION_CHANEL_ID)
@@ -117,8 +122,8 @@ class CheckoutActivity : AppCompatActivity() {
             .setVibrate(longArrayOf(1000, 1000, 1000, 1000, 1000))
             .setLights(Color.RED, 300,300)
             .setDefaults(Notification.DEFAULT_SOUND)
-            .setContentTitle("Pembayaran Telah di Terima")
-            .setContentText("bwamov")
+            .setContentTitle("Sukses Terbeli")
+            .setContentText("Tiket " +datas.judul+ " berhasil kamu dapatkan. Enjoy the movie!")
 
         notificationManager = getSystemService(NOTIFICATION_SERVICE) as NotificationManager
         notificationManager.notify(115,builder.build())

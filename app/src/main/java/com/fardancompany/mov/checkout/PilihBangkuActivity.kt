@@ -61,8 +61,10 @@ class PilihBangkuActivity : AppCompatActivity() {
         }
 
         btn_beli_tiket.setOnClickListener {
-            val intent = Intent(this,
-                CheckoutActivity::class.java).putExtra("data",dataList)
+            val intent = Intent(
+                this,
+                CheckoutActivity::class.java
+            ).putExtra("data",dataList).putExtra("datas", data)
             startActivity(intent)
         }
 
