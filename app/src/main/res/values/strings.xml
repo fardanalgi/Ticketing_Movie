@@ -74,5 +74,9 @@
     <string name="change_language">Change Language</string>
     <string name="help">Help</string>
     <string name="total_balance">Total Balance</string>
+    <string name="top_up_saldo">Top Up Saldo</string>
+    <string name="avengers_returns">Avengers Returns</string>
+    <string name="sabtu_12_jan_2020">Sabtu 12 Jan, 2020</string>
+    <string name="idr_22_000">- IDR 22.000</string>
 
 </resources>

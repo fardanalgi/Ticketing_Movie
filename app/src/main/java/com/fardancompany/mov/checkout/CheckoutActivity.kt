@@ -111,10 +111,10 @@ class CheckoutActivity : AppCompatActivity() {
 
         val builder = NotificationCompat.Builder(this, NOTIFICATION_CHANEL_ID)
         builder.setContentIntent(pendingIntent)
-            .setSmallIcon(R.mipmap.ic_launcher)
+            .setSmallIcon(R.drawable.logo_loading)
             .setLargeIcon(
                 BitmapFactory.decodeResource(
-                    this.resources,R.mipmap.ic_launcher
+                    this.resources,R.drawable.logo_notification
                 )
             )
             .setTicker("notif bwa starting")
