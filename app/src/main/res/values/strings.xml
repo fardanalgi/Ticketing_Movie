@@ -78,5 +78,8 @@
     <string name="avengers_returns">Avengers Returns</string>
     <string name="sabtu_12_jan_2020">Sabtu 12 Jan, 2020</string>
     <string name="idr_22_000">- IDR 22.000</string>
+    <string name="you_got_it">You got it!</string>
+    <string name="e_wallet_telah_berhasil_nuntuk_diperbarui">E-Wallet telah berhasil \nuntuk diperbarui</string>
+    <string name="lihat_wallet">lihat wallet</string>
 
 </resources>

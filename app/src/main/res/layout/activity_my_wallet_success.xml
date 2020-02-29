@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/biru"
-    tools:context=".checkout.CheckoutSuccessActivity">
+    tools:context=".wallet.MyWalletSuccessActivity">
 
     <Button
         android:id="@+id/btn_home"
@@ -23,7 +23,7 @@
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
-        android:id="@+id/btn_lihat_tiket"
+        android:id="@+id/btn_tiket"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
@@ -31,7 +31,7 @@
         android:layout_marginBottom="16dp"
         android:background="@drawable/button_pink"
         android:fontFamily="@font/montserrat"
-        android:text="@string/lihat_tiket"
+        android:text="@string/lihat_wallet"
         android:textColor="@color/putih"
         app:layout_constraintBottom_toTopOf="@+id/btn_home"
         app:layout_constraintEnd_toEndOf="parent"
@@ -54,7 +54,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
         android:fontFamily="@font/montserrat"
-        android:text="@string/happy_watching"
+        android:text="@string/you_got_it"
         android:textColor="@color/putih"
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -69,7 +69,7 @@
         android:layout_marginEnd="24dp"
         android:fontFamily="@font/montserrat"
         android:gravity="center"
-        android:text="@string/tiket_telah_berhasil_dibeli_ndan_selamat_menikmati_film"
+        android:text="@string/e_wallet_telah_berhasil_nuntuk_diperbarui"
         android:textColor="@color/putih"
         android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="parent"

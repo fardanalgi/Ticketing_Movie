@@ -24,8 +24,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme.noActionBar">
-        <activity android:name=".wallet.MyWaletTopUpActivity"></activity>
-        <activity android:name=".TiketActivityTwo" />
+        <activity android:name=".wallet.MyWalletSuccessActivity"></activity>
+        <activity android:name=".wallet.MyWaletTopUpActivity" />
         <activity android:name=".TiketActivity" />
         <activity android:name=".checkout.CheckoutSuccessActivity" />
         <activity android:name=".DetailActivity" />

@@ -84,6 +84,7 @@
 
     <Button
         android:id="@+id/btn_top_up"
+        android:visibility="invisible"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
